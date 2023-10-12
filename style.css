@@ -1,11 +1,11 @@
 @font-face {
     font-family: fragment;
-    src: url(FragmentMono-Regular.ttf);
+    src: url(fonts/FragmentMono-Regular.ttf);
 }
 
 @font-face {
     font-family: regular;
-    src: url(Regular.otf);
+    src: url(fonts/Regular.otf);
 }
 
 body{
@@ -139,7 +139,7 @@ button:hover{
 }
 
 .popups{
-    background-image: url('stickkerllama.png');
+    background-image: url('images/stickkerllama.png');
     background-size: contain;
     display: flex;
     width: 450px;
