@@ -1,0 +1,5 @@
+notes on current layout:
+focus more on css animations and transitions rather than js
+negative margins to overlay divs!!!
+add @ or buttons for more instagram feel
+landing page with chosen character

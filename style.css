@@ -1,0 +1,194 @@
+@font-face {
+    font-family: fragment;
+    src: url(FragmentMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(Regular.otf);
+}
+
+body{
+    background-color: black;
+    font-family: 'fragment';
+    color: white;
+}
+
+.name{
+    height: 100vh;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+}
+
+.title{
+    font-size: 70px;
+    animation: title 1s forwards;
+}
+
+.title:hover{
+    cursor: pointer;
+}
+
+@keyframes title{
+    0%{
+        font-size: 60px;
+        color:white;
+        background-color: black;
+        border: none;
+    }
+    100%{
+        font-size: 50px;
+        color:greenyellow;
+        box-shadow: 2px;
+        background-color: black;
+        border-color: grey;
+        border-style: inset;
+        max-width: 55vw;
+        margin: -2px;
+    }
+}
+
+.intro{
+    display: flex;
+    height: 80vh;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: bob infinite 1s ease;
+}
+
+@keyframes bob{
+    0%{}
+    50%{transform: translateY(10px);}
+    100%{tranform: translateY(-10px);}
+}
+
+.container1{
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+    margin: 100px;
+}
+
+#avatar{
+    height: 200px;
+}
+
+#avatar:hover{
+    height: 210px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+button{
+    max-width: 200px;
+    font-size: 20px;
+    font-family: 'regular';
+    height: 40px;
+    color: greenyellow;
+    background-color: black;
+    border: 3px;
+    border-color: grey;
+    border-style:inset;
+}
+
+button:hover{
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+.buttons{
+    margin-top: -80px;
+}
+
+.hint{
+    animation: appear 3s forwards;
+    position: relative;
+}
+
+@keyframes appear {
+    0%{
+        color: black;
+    }
+    95%{
+        color: black;
+    }
+    100%{
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin-left: 100px;
+}
+
+.container2{
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.popups{
+    background-image: url('stickkerllama.png');
+    background-size: contain;
+    display: flex;
+    width: 450px;
+    height: 450px;
+    flex-direction: column;
+    animation: bob 1.3s 2 ease;
+}
+
+#reddot{
+    transform: scale(.2);
+    width: 150px;
+    height: max-content;
+}
+
+#reddot:hover{
+    animation: popup .2s forwards;
+}
+
+@keyframes popup {
+    from{}
+    to{
+        transform: scale(.6);
+    }
+}
+
+.stats{
+    font-family: 'regular';
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20vw;
+    animation: bob 1s infinite ease;
+}
+
+.gif{
+    height: 400px;
+    width:max-content;
+}
+
+.gif:hover{
+    cursor: none;
+    animation: bgcolor 1s ease
+}
+
+@keyframes bgcolor {
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: white;
+    }
+}
