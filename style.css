@@ -133,7 +133,7 @@ button:hover{
 
 .container2{
     display: flex;
-    margin: 50px;
+    margin-left: 5vw;
     justify-content: space-between;
     height: 400px;
 }
@@ -176,12 +176,12 @@ button:hover{
 
 .gif{
     height: 400px;
-    width:max-content;
+    width: max-content;
 }
 
 .gif:hover{
     cursor: none;
-    animation: bgcolor 1s ease
+    animation: bgcolor 1s ease;
 }
 
 @keyframes bgcolor {
@@ -191,4 +191,18 @@ button:hover{
     to{
         background-color: white;
     }
+}
+
+.painting{
+    width: 25vw;
+    height: max-content;
+    margin-left: 5vw;
+    margin-top: -15px;
+}
+
+.painting:hover{
+    cursor: zoom-in;
+    width: 30vw;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
 }
